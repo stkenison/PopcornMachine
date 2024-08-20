@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<!--Velocio.net-->
+<!--vBuilder Project 1.0-->
+<Tree Default="Flow Chart" iProgramCheckSum="334788">
+  <leaf index="0" CANDataRate="rate1MBaud" Type="Ace 5150" bEEPROM_CPU="True" sESub="08 16 24.viof">
+    <serialData alPortsIndex="1" mySerialType="modbus" sSubPort="A2" myBaudRate="rate9600" myParity="None" bRS232or485="False" myRSType="RS232" iStopBits="1" sReceiveDataTagKey="" sSendDataTagKey="" />
+    <SWTK iDebugRunningObject="0" iIndexOfFirstChar="10" iIndexOfFirstFloat="82" iIndexOfFirstPassByRef="82" iIndexOfFirstS16="34" iIndexOfFirstS32="46" iIndexOfFirstU16="10" iNumOf16BitWordsOfStackSpaceUsed="82" iObjectInstances="1" iSubDataBase="0" iUsedBits="44" iUsedChars="0" iUsedFloat="0" iUsedPassByRef="0" iUsedS16="6" iUsedS32="9" iUsedU16="12">
+      <linkedSub iCallStackCount="0" iCallStackCurrent="0" iCallStackFirst="0" iRungFirstIndex="0" iRungLastIndex="95" iSubNumber="0" iTagCount="89" iTagFirstIndex="1" />
+      <PointerData iPtrIndex="1" iPtrsAllocated="1" mytype="coilTimer" myElement.sAddress="RunTime" />
+      <PointerData iPtrIndex="2" iPtrsAllocated="1" mytype="coilTimer" myElement.sAddress="PopcornPopTimer" />
+      <PointerData iPtrIndex="3" iPtrsAllocated="1" mytype="coilTimer" myElement.sAddress="ActuatorTimer" />
+      <PointerData iPtrIndex="4" iPtrsAllocated="1" mytype="coilTimer" myElement.sAddress="ActShakeTimer" />
+      <PointerData iPtrIndex="5" iPtrsAllocated="1" mytype="coilTimer" myElement.sAddress="ManualModeTimer" />
+      <PointerData iPtrIndex="6" iPtrsAllocated="1" mytype="coilTimer" myElement.sAddress="WarmerLightTimer" />
+      <PointerData iPtrIndex="1" iPtrsAllocated="1" mytype="coilFilter" myElement.sAddress="FilteredTemp" />
+      <PointerData iPtrIndex="1" iPtrsAllocated="1" mytype="coilCounter" myElement.sAddress="CycleCount" />
+      <connectionProgramDetails Key="vFactoryPage" TagNumber="30" index="0" mask="65535" />
+      <connectionProgramDetails Key="TempInputVoltage" TagNumber="3" index="0" mask="65535" />
+      <connectionProgramDetails Key="InI16A2" TagNumber="4" index="1" mask="65535" />
+      <connectionProgramDetails Key="Inl16A3" TagNumber="5" index="2" mask="65535" />
+      <connectionProgramDetails Key="SerialRXA1" TagNumber="1" index="0" mask="1" />
+      <connectionProgramDetails Key="SerialTXA1" TagNumber="2" index="0" mask="2" />
+      <connectionProgramDetails Key="EStopNotPressed" TagNumber="6" index="1" mask="64" />
+      <connectionProgramDetails Key="InBitB2" TagNumber="7" index="1" mask="128" />
+      <connectionProgramDetails Key="InBitB3" TagNumber="8" index="1" mask="256" />
+      <connectionProgramDetails Key="InBitB4" TagNumber="9" index="1" mask="512" />
+      <connectionProgramDetails Key="InBitB5" TagNumber="10" index="1" mask="1024" />
+      <connectionProgramDetails Key="InBitB6" TagNumber="11" index="1" mask="2048" />
+      <connectionProgramDetails Key="ActIsRetracted" TagNumber="12" index="1" mask="1" />
+      <connectionProgramDetails Key="ActIsExtended" TagNumber="13" index="1" mask="2" />
+      <connectionProgramDetails Key="InBitC3" TagNumber="14" index="1" mask="4" />
+      <connectionProgramDetails Key="InBitC4" TagNumber="15" index="1" mask="8" />
+      <connectionProgramDetails Key="InBitC5" TagNumber="16" index="1" mask="16" />
+      <connectionProgramDetails Key="InBitC6" TagNumber="17" index="1" mask="32" />
+      <connectionProgramDetails Key="ActuatorLogicPwr" TagNumber="18" index="2" mask="1" />
+      <connectionProgramDetails Key="TurnOnStirrer" TagNumber="19" index="2" mask="2" />
+      <connectionProgramDetails Key="RetractActV2" TagNumber="20" index="2" mask="4" />
+      <connectionProgramDetails Key="TurnOnWarmerLght" TagNumber="21" index="2" mask="8" />
+      <connectionProgramDetails Key="ExtendActV2" TagNumber="22" index="2" mask="16" />
+      <connectionProgramDetails Key="TurnOnKettle" TagNumber="23" index="2" mask="32" />
+      <connectionProgramDetails Key="OutBitE1" TagNumber="24" index="2" mask="64" />
+      <connectionProgramDetails Key="OutBitE2" TagNumber="25" index="2" mask="128" />
+      <connectionProgramDetails Key="OutBitE3" TagNumber="26" index="2" mask="256" />
+      <connectionProgramDetails Key="OutBitE4" TagNumber="27" index="2" mask="512" />
+      <connectionProgramDetails Key="RetractActuator" TagNumber="28" index="2" mask="1024" />
+      <connectionProgramDetails Key="ExtendActuator" TagNumber="29" index="2" mask="2048" />
+      <connectionProgramDetails Key="ActButtonPressed" TagNumber="31" index="3" mask="1" />
+      <connectionProgramDetails Key="KetButtonPressed" TagNumber="32" index="3" mask="2" />
+      <connectionProgramDetails Key="CalculatedTemp" TagNumber="33" index="3" mask="65535" />
+      <connectionProgramDetails Key="ActLogicPwrtPrsd" TagNumber="34" index="3" mask="4" />
+      <connectionProgramDetails Key="RunTime" TagNumber="35" index="0" mask="65535" />
+      <connectionProgramDetails Key="HMIScreen" TagNumber="36" index="4" mask="65535" />
+      <connectionProgramDetails Key="WarmerLighButton" TagNumber="37" index="3" mask="8" />
+      <connectionProgramDetails Key="PopPopcornButton" TagNumber="38" index="3" mask="16" />
+      <connectionProgramDetails Key="CustomCookTime" TagNumber="39" index="1" mask="65535" />
+      <connectionProgramDetails Key="WarmLightTimout" TagNumber="40" index="2" mask="65535" />
+      <connectionProgramDetails Key="WarmerLightTimer" TagNumber="41" index="1" mask="65535" />
+      <connectionProgramDetails Key="WArmerLightTimer" TagNumber="42" index="2" mask="65535" />
+      <connectionProgramDetails Key="ManualMode" TagNumber="43" index="3" mask="32" />
+      <connectionProgramDetails Key="PopcornPopTimer" TagNumber="44" index="3" mask="65535" />
+      <connectionProgramDetails Key="ExtendActTimer" TagNumber="45" index="4" mask="65535" />
+      <connectionProgramDetails Key="ActuatorTimer" TagNumber="46" index="5" mask="65535" />
+      <connectionProgramDetails Key="OnScreenTimer" TagNumber="47" index="3" mask="65535" />
+      <connectionProgramDetails Key="GoToHomeScreen" TagNumber="48" index="3" mask="64" />
+      <connectionProgramDetails Key="ScanCount" TagNumber="49" index="4" mask="65535" />
+      <connectionProgramDetails Key="CycleReset" TagNumber="50" index="3" mask="128" />
+      <connectionProgramDetails Key="StrButtonPressed" TagNumber="51" index="3" mask="256" />
+      <connectionProgramDetails Key="HomingStatus" TagNumber="52" index="3" mask="512" />
+      <connectionProgramDetails Key="ActuatorFault" TagNumber="53" index="3" mask="1024" />
+      <connectionProgramDetails Key="ResetActFaultBtn" TagNumber="54" index="3" mask="2048" />
+      <connectionProgramDetails Key="CancelPoppingBtn" TagNumber="55" index="3" mask="4096" />
+      <connectionProgramDetails Key="ConfirmCleanBtn" TagNumber="56" index="3" mask="8192" />
+      <connectionProgramDetails Key="SelectPopcornAmt" TagNumber="57" index="5" mask="65535" />
+      <connectionProgramDetails Key="CookTime8oz" TagNumber="58" index="6" mask="65535" />
+      <connectionProgramDetails Key="CookTime16oz" TagNumber="59" index="7" mask="65535" />
+      <connectionProgramDetails Key="CookTime" TagNumber="60" index="8" mask="65535" />
+      <connectionProgramDetails Key="ActShakeTimer" TagNumber="61" index="6" mask="65535" />
+      <connectionProgramDetails Key="IgnoreFaultBtn" TagNumber="62" index="3" mask="16384" />
+      <connectionProgramDetails Key="CleaningNeeded" TagNumber="63" index="3" mask="32768" />
+      <connectionProgramDetails Key="CycleCount" TagNumber="64" index="9" mask="65535" />
+      <connectionProgramDetails Key="FilteredTemp" TagNumber="65" index="5" mask="65535" />
+      <connectionProgramDetails Key="ManModeTimeout" TagNumber="66" index="7" mask="65535" />
+      <connectionProgramDetails Key="OnScreenTimer2" TagNumber="67" index="10" mask="65535" />
+      <connectionProgramDetails Key="ManualModeTimer" TagNumber="68" index="8" mask="65535" />
+      <connectionProgramDetails Key="EarlyDumpButton" TagNumber="69" index="4" mask="1" />
+      <connectionProgramDetails Key="OnScreenTimer3" TagNumber="70" index="11" mask="65535" />
+      <connectionProgramDetails Key="VisiblErlyDmpBtn" TagNumber="71" index="4" mask="2" />
+      <connectionProgramDetails Key="VE_TempI32_0" TagNumber="72" index="0" mask="65535" />
+      <connectionProgramDetails Key="VE_TempFloat_0" TagNumber="73" index="0" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_0" TagNumber="74" index="0" mask="65535" />
+      <connectionProgramDetails Key="VE_TempI32_1" TagNumber="75" index="1" mask="65535" />
+      <connectionProgramDetails Key="VE_TempFloat_1" TagNumber="76" index="1" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_1" TagNumber="77" index="1" mask="65535" />
+      <connectionProgramDetails Key="VE_TempI32_2" TagNumber="78" index="2" mask="65535" />
+      <connectionProgramDetails Key="VE_TempFloat_2" TagNumber="79" index="2" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_2" TagNumber="80" index="2" mask="65535" />
+      <connectionProgramDetails Key="VE_TempI32_3" TagNumber="81" index="3" mask="65535" />
+      <connectionProgramDetails Key="VE_TempFloat_3" TagNumber="82" index="3" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_3" TagNumber="83" index="3" mask="65535" />
+      <connectionProgramDetails Key="VE_TempI32_4" TagNumber="84" index="4" mask="65535" />
+      <connectionProgramDetails Key="VE_TempFloat_4" TagNumber="85" index="4" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_4" TagNumber="86" index="4" mask="65535" />
+      <connectionProgramDetails Key="VE_TempI32_5" TagNumber="87" index="5" mask="65535" />
+      <connectionProgramDetails Key="VE_TempFloat_5" TagNumber="88" index="5" mask="65535" />
+      <connectionProgramDetails Key="VE_TempUI16_5" TagNumber="89" index="5" mask="65535" />
+    </SWTK>
+  </leaf>
+</Tree>

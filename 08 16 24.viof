@@ -1,0 +1,773 @@
+<?xml version="1.0"?>
+<!--Velocio Builder 1.1-->
+<!--www.Velocio.net-->
+<VelocioNetworks IPAddress="">
+  <Setup ProjectType="FlowChart" />
+  <Connections>
+    <Connection sKey="vFactoryPage" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="register" />
+    <Connection sKey="TempInputVoltage" iPort="0" iPin="1" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I16" dataSource="input" />
+    <Connection sKey="InI16A2" iPort="0" iPin="2" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I16" dataSource="input" />
+    <Connection sKey="Inl16A3" iPort="0" iPin="3" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I16" dataSource="input" />
+    <Connection sKey="SerialRXA1" bIsSerialRX="True" iPort="0" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="register" />
+    <Connection sKey="SerialTXA1" bISSerialTX="True" iPort="0" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="register" />
+    <Connection sKey="EStopNotPressed" iModbusStart="5" iPort="1" iPin="1" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="input" />
+    <Connection sKey="InBitB2" iPort="1" iPin="2" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="input" />
+    <Connection sKey="InBitB3" iPort="1" iPin="3" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="input" />
+    <Connection sKey="InBitB4" iPort="1" iPin="4" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="input" />
+    <Connection sKey="InBitB5" iPort="1" iPin="5" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="input" />
+    <Connection sKey="InBitB6" iPort="1" iPin="6" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="input" />
+    <Connection sKey="ActIsRetracted" iPort="2" iPin="1" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="input" />
+    <Connection sKey="ActIsExtended" iPort="2" iPin="2" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="input" />
+    <Connection sKey="InBitC3" iPort="2" iPin="3" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="input" />
+    <Connection sKey="InBitC4" iPort="2" iPin="4" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="input" />
+    <Connection sKey="InBitC5" iPort="2" iPin="5" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="input" />
+    <Connection sKey="InBitC6" iPort="2" iPin="6" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="input" />
+    <Connection sKey="ActuatorLogicPwr" iPort="3" iPin="1" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="output" />
+    <Connection sKey="TurnOnStirrer" iPort="3" iPin="2" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="output" />
+    <Connection sKey="RetractActV2" iPort="3" iPin="3" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="output" />
+    <Connection sKey="TurnOnWarmerLght" iPort="3" iPin="4" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="output" />
+    <Connection sKey="ExtendActV2" iPort="3" iPin="5" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="output" />
+    <Connection sKey="TurnOnKettle" iPort="3" iPin="6" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="output" />
+    <Connection sKey="OutBitE1" iPort="4" iPin="1" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="output" />
+    <Connection sKey="OutBitE2" iPort="4" iPin="2" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="output" />
+    <Connection sKey="OutBitE3" iPort="4" iPin="3" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="output" />
+    <Connection sKey="OutBitE4" iPort="4" iPin="4" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="output" />
+    <Connection sKey="RetractActuator" iPort="4" iPin="5" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="output" />
+    <Connection sKey="ExtendActuator" iPort="4" iPin="6" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="output" />
+    <Connection sKey="ActButtonPressed" iModbusStart="1" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="register" />
+    <Connection sKey="KetButtonPressed" iModbusStart="2" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="register" />
+    <Connection sKey="CalculatedTemp" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I16" dataSource="register" />
+    <Connection sKey="ActLogicPwrtPrsd" iModbusStart="7" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="register" />
+    <Connection sKey="RunTime" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="HMIScreen" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I16" dataSource="register" />
+    <Connection sKey="WarmerLighButton" iModbusStart="4" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="register" />
+    <Connection sKey="PopPopcornButton" iModbusStart="3" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="register" />
+    <Connection sKey="CustomCookTime" iModbusStart="2" iModbusEnd="2" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="register" />
+    <Connection sKey="WarmLightTimout" iModbusStart="3" iModbusEnd="3" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="register" />
+    <Connection sKey="WarmerLightTimer" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="WArmerLightTimer" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="ManualMode" iModbusStart="6" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="register" />
+    <Connection sKey="PopcornPopTimer" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="ExtendActTimer" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="ActuatorTimer" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="OnScreenTimer" iModbusStart="4" iModbusEnd="4" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="register" />
+    <Connection sKey="GoToHomeScreen" iModbusStart="8" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="register" />
+    <Connection sKey="ScanCount" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="register" />
+    <Connection sKey="CycleReset" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="register" />
+    <Connection sKey="StrButtonPressed" iModbusStart="9" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="register" />
+    <Connection sKey="HomingStatus" iModbusStart="10" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="register" />
+    <Connection sKey="ActuatorFault" iModbusStart="11" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="register" />
+    <Connection sKey="ResetActFaultBtn" iModbusStart="12" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="register" />
+    <Connection sKey="CancelPoppingBtn" iModbusStart="13" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="register" />
+    <Connection sKey="ConfirmCleanBtn" iModbusStart="14" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="register" />
+    <Connection sKey="SelectPopcornAmt" iModbusStart="5" iModbusEnd="5" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="register" />
+    <Connection sKey="CookTime8oz" iModbusStart="6" iModbusEnd="6" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="register" />
+    <Connection sKey="CookTime16oz" iModbusStart="7" iModbusEnd="7" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="register" />
+    <Connection sKey="CookTime" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="register" />
+    <Connection sKey="ActShakeTimer" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="IgnoreFaultBtn" iModbusStart="15" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="register" />
+    <Connection sKey="CleaningNeeded" iModbusStart="16" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="register" />
+    <Connection sKey="CycleCount" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="register" />
+    <Connection sKey="FilteredTemp" iModbusStart="1" iModbusEnd="1" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I16" dataSource="register" />
+    <Connection sKey="ManModeTimeout" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="OnScreenTimer2" iModbusStart="8" iModbusEnd="8" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="register" />
+    <Connection sKey="ManualModeTimer" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="I32" dataSource="register" />
+    <Connection sKey="EarlyDumpButton" iModbusStart="17" bRemoteWritable="True" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="register" />
+    <Connection sKey="OnScreenTimer3" iModbusStart="9" iModbusEnd="9" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="UI16" dataSource="register" />
+    <Connection sKey="VisiblErlyDmpBtn" iModbusStart="18" ui32Mask="0" ui32MessageId="0" ui32Period="0" dataType="Bit" dataSource="register" />
+  </Connections>
+  <Modbus />
+  <SubroutineInputs cellsHeigh="0" />
+  <Cells>
+    <coilCopy rung="0" row="7" column="1" cellsHeigh="9" iSortedIndex="1" CopyType="standard">
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="300" sIndex="" dtAddress="I32" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="I16" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="240" sIndex="" dtAddress="UI16" />
+      <eKeySource sAddress="3" sIndex="" dtAddress="UI16" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="390" sIndex="" dtAddress="UI16" />
+      <eKeySource sAddress="260" sIndex="" dtAddress="UI16" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="UI16" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="ActButtonPressed" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="KetButtonPressed" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="ManModeTimeout" sIndex="" dtAddress="I32" />
+      <eKeyDestination sAddress="CalculatedTemp" sIndex="" dtAddress="I16" />
+      <eKeyDestination sAddress="ActLogicPwrtPrsd" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="WarmerLighButton" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="PopPopcornButton" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="CustomCookTime" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="WarmLightTimout" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="ManualMode" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="CookTime16oz" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="CookTime8oz" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="IgnoreFaultBtn" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="ActuatorFault" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="CycleCount" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="CleaningNeeded" sIndex="" dtAddress="Bit" />
+    </coilCopy>
+    <start rung="0" row="1" column="2" cellsHeigh="-1" iSortedIndex="-1" />
+    <coilTimer rung="0" row="4" column="2" cellsHeigh="3" iSortedIndex="0" myType="Timer" myTimerCommand="Start">
+      <eKeyTimer sAddress="RunTime" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <flowComment rung="0" row="12" column="15" cellsHeigh="-1" iSortedIndex="-1" sTextUnformatted="" sText="E-Stop ">
+      <bDown value="False" />
+      <bLeft value="False" />
+      <bLeftDown value="False" />
+      <bLeftUp value="False" />
+      <bRight value="False" />
+      <bRightDown value="False" />
+      <bRightUp value="False" />
+      <bUp value="False" />
+    </flowComment>
+    <flowComment rung="0" row="12" column="7" cellsHeigh="-1" iSortedIndex="-1" sTextUnformatted="" sText="Temperature Sensor">
+      <bDown value="False" />
+      <bLeft value="False" />
+      <bLeftDown value="False" />
+      <bLeftUp value="False" />
+      <bRight value="False" />
+      <bRightDown value="False" />
+      <bRightUp value="False" />
+      <bUp value="False" />
+    </flowComment>
+    <flowComment rung="0" row="49" column="9" cellsHeigh="-1" iSortedIndex="-1" sTextUnformatted="" sText="Delay Actuator Logic Power">
+      <bDown value="False" />
+      <bLeft value="False" />
+      <bLeftDown value="False" />
+      <bLeftUp value="False" />
+      <bRight value="False" />
+      <bRightDown value="False" />
+      <bRightUp value="False" />
+      <bUp value="False" />
+    </flowComment>
+    <NO rung="0" row="66" column="6" cellsHeigh="-1" iSortedIndex="20">
+      <eAddress1 sAddress="ManualMode" sIndex="" dtAddress="Bit" />
+    </NO>
+    <NO rung="0" row="58" column="6" cellsHeigh="-1" iSortedIndex="15">
+      <eAddress1 sAddress="HomingStatus" sIndex="" dtAddress="Bit" />
+    </NO>
+    <flowComment rung="0" row="61" column="14" cellsHeigh="-1" iSortedIndex="-1" sTextUnformatted="" sText="Move Actuator">
+      <bDown value="False" />
+      <bLeft value="False" />
+      <bLeftDown value="False" />
+      <bLeftUp value="False" />
+      <bRight value="False" />
+      <bRightDown value="False" />
+      <bRightUp value="False" />
+      <bUp value="False" />
+    </flowComment>
+    <coilReset rung="0" row="58" column="10" cellsHeigh="-1" iSortedIndex="16">
+      <eAddress1 sAddress="HomingStatus" sIndex="" dtAddress="Bit" />
+    </coilReset>
+    <coilSet rung="0" row="61" column="10" cellsHeigh="-1" iSortedIndex="17">
+      <eAddress1 sAddress="GoToHomeScreen" sIndex="" dtAddress="Bit" />
+    </coilSet>
+    <NO rung="0" row="36" column="5" cellsHeigh="-1" iSortedIndex="5">
+      <eAddress1 sAddress="WarmerLighButton" sIndex="" dtAddress="Bit" />
+    </NO>
+    <flowComment rung="0" row="33" column="13" cellsHeigh="-1" iSortedIndex="-1" sTextUnformatted="" sText="Timout warmer &amp; light">
+      <bDown value="False" />
+      <bLeft value="False" />
+      <bLeftDown value="False" />
+      <bLeftUp value="False" />
+      <bRight value="False" />
+      <bRightDown value="False" />
+      <bRightUp value="False" />
+      <bUp value="False" />
+    </flowComment>
+    <coilCopy rung="0" row="32" column="4" cellsHeigh="3" iSortedIndex="19" CopyType="standard">
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="ActuatorFault" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="ResetActFaultBtn" sIndex="" dtAddress="Bit" />
+    </coilCopy>
+    <NO rung="0" row="24" column="21" cellsHeigh="-1" iSortedIndex="45">
+      <eAddress1 sAddress="ResetActFaultBtn" sIndex="" dtAddress="Bit" />
+    </NO>
+    <coilSet rung="0" row="24" column="18" cellsHeigh="-1" iSortedIndex="44">
+      <eAddress1 sAddress="ActuatorFault" sIndex="" dtAddress="Bit" />
+    </coilSet>
+    <NO rung="0" row="24" column="14" cellsHeigh="-1" iSortedIndex="43">
+      <eAddress1 sAddress="ActIsRetracted" sIndex="" dtAddress="Bit" />
+    </NO>
+    <NO rung="0" row="24" column="10" cellsHeigh="-1" iSortedIndex="42">
+      <eAddress1 sAddress="ActIsExtended" sIndex="" dtAddress="Bit" />
+    </NO>
+    <flowComment rung="0" row="45" column="24" cellsHeigh="-1" iSortedIndex="-1" sTextUnformatted="" sText="Home Actuator">
+      <bDown value="False" />
+      <bLeft value="False" />
+      <bLeftDown value="False" />
+      <bLeftUp value="False" />
+      <bRight value="False" />
+      <bRightDown value="False" />
+      <bRightUp value="False" />
+      <bUp value="False" />
+    </flowComment>
+    <coilCopy rung="0" row="49" column="25" cellsHeigh="5" iSortedIndex="40" CopyType="standard">
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="1" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="RetractActV2" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="ExtendActV2" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="HomingStatus" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="ManualMode" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="ActuatorFault" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="EarlyDumpButton" sIndex="" dtAddress="Bit" />
+    </coilCopy>
+    <coilCopy rung="0" row="54" column="25" cellsHeigh="5" iSortedIndex="41" CopyType="standard">
+      <eKeySource sAddress="1" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="1" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="RetractActV2" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="ExtendActV2" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="HomingStatus" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="ActuatorFault" sIndex="" dtAddress="Bit" />
+    </coilCopy>
+    <TimerCompare rung="0" row="54" column="22" cellsHeigh="-1" iSortedIndex="14" timerCompareType="GreaterOrEqual" timeUnit="sec">
+      <eKeyTimerValue sAddress="RunTime" sIndex="" dtAddress="I32" />
+      <eKeyDuration sAddress="12" sIndex="" dtAddress="UI8" />
+    </TimerCompare>
+    <TimerCompare rung="0" row="50" column="22" cellsHeigh="-1" iSortedIndex="13" timerCompareType="GreaterOrEqual" timeUnit="sec">
+      <eKeyTimerValue sAddress="RunTime" sIndex="" dtAddress="I32" />
+      <eKeyDuration sAddress="8" sIndex="" dtAddress="UI8" />
+    </TimerCompare>
+    <coilReset rung="0" row="54" column="18" cellsHeigh="-1" iSortedIndex="39">
+      <eAddress1 sAddress="ActuatorLogicPwr" sIndex="" dtAddress="Bit" />
+    </coilReset>
+    <coilSet rung="0" row="50" column="18" cellsHeigh="-1" iSortedIndex="12">
+      <eAddress1 sAddress="ActuatorLogicPwr" sIndex="" dtAddress="Bit" />
+    </coilSet>
+    <coilTimer rung="0" row="52" column="10" cellsHeigh="3" iSortedIndex="10" myType="Timer" myTimerCommand="Start">
+      <eKeyTimer sAddress="RunTime" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <NO rung="0" row="24" column="5" cellsHeigh="-1" iSortedIndex="18">
+      <eAddress1 sAddress="IgnoreFaultBtn" sIndex="" dtAddress="Bit" />
+    </NO>
+    <flowComment rung="0" row="82" column="11" cellsHeigh="-1" iSortedIndex="-1" sTextUnformatted="" sText="Kettle Dump Process">
+      <bDown value="False" />
+      <bLeft value="False" />
+      <bLeftDown value="False" />
+      <bLeftUp value="False" />
+      <bRight value="False" />
+      <bRightDown value="False" />
+      <bRightUp value="False" />
+      <bUp value="False" />
+    </flowComment>
+    <coilCopy rung="0" row="119" column="15" cellsHeigh="5" iSortedIndex="61" CopyType="standard">
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="1" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="1" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="ExtendActV2" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="RetractActV2" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="TurnOnStirrer" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="TurnOnKettle" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="PopPopcornButton" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="CycleReset" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="EarlyDumpButton" sIndex="" dtAddress="Bit" />
+    </coilCopy>
+    <coilCopy rung="0" row="118" column="21" cellsHeigh="3" iSortedIndex="91" CopyType="standard">
+      <eKeySource sAddress="1" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="ExtendActV2" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="RetractActV2" sIndex="" dtAddress="Bit" />
+    </coilCopy>
+    <coilTimer rung="0" row="120" column="6" cellsHeigh="3" iSortedIndex="60" myType="Timer" myTimerCommand="Reset">
+      <eKeyTimer sAddress="PopcornPopTimer" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <coilTimer rung="0" row="116" column="6" cellsHeigh="3" iSortedIndex="59" myType="Timer" myTimerCommand="Reset">
+      <eKeyTimer sAddress="ActuatorTimer" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <TimerCompare rung="0" row="112" column="14" cellsHeigh="-1" iSortedIndex="90" timerCompareType="Less" timeUnit="sec">
+      <eKeyTimerValue sAddress="ActuatorTimer" sIndex="" dtAddress="I32" />
+      <eKeyDuration sAddress="8.5" sIndex="" dtAddress="Float" />
+    </TimerCompare>
+    <coilTimer rung="0" row="114" column="27" cellsHeigh="3" iSortedIndex="94" myType="Timer" myTimerCommand="Reset">
+      <eKeyTimer sAddress="ActShakeTimer" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <TimerCompare rung="0" row="111" column="20" cellsHeigh="-1" iSortedIndex="92" timerCompareType="Less" timeUnit="sec">
+      <eKeyTimerValue sAddress="ActShakeTimer" sIndex="" dtAddress="I32" />
+      <eKeyDuration sAddress=".30" sIndex="" dtAddress="Float" />
+    </TimerCompare>
+    <coilCopy rung="0" row="111" column="25" cellsHeigh="3" iSortedIndex="93" CopyType="standard">
+      <eKeySource sAddress="1" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="ExtendActV2" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="RetractActV2" sIndex="" dtAddress="Bit" />
+    </coilCopy>
+    <coilCopy rung="0" row="108" column="25" cellsHeigh="3" iSortedIndex="88" CopyType="standard">
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="1" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="ExtendActV2" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="RetractActV2" sIndex="" dtAddress="Bit" />
+    </coilCopy>
+    <TimerCompare rung="0" row="108" column="20" cellsHeigh="-1" iSortedIndex="87" timerCompareType="Less" timeUnit="sec">
+      <eKeyTimerValue sAddress="ActShakeTimer" sIndex="" dtAddress="I32" />
+      <eKeyDuration sAddress=".15" sIndex="" dtAddress="Float" />
+    </TimerCompare>
+    <TimerCompare rung="0" row="108" column="14" cellsHeigh="-1" iSortedIndex="85" timerCompareType="Less" timeUnit="sec">
+      <eKeyTimerValue sAddress="ActuatorTimer" sIndex="" dtAddress="I32" />
+      <eKeyDuration sAddress="6.5" sIndex="" dtAddress="Float" />
+    </TimerCompare>
+    <coilTimer rung="0" row="108" column="17" cellsHeigh="3" iSortedIndex="86" myType="Timer" myTimerCommand="Start">
+      <eKeyTimer sAddress="ActShakeTimer" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <TimerCompare rung="0" row="104" column="14" cellsHeigh="-1" iSortedIndex="72" timerCompareType="Less" timeUnit="sec">
+      <eKeyTimerValue sAddress="ActuatorTimer" sIndex="" dtAddress="I32" />
+      <eKeyDuration sAddress="3.5" sIndex="" dtAddress="Float" />
+    </TimerCompare>
+    <coilCopy rung="0" row="103" column="25" cellsHeigh="5" iSortedIndex="73" CopyType="standard">
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="1" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="1" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="TurnOnKettle" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="TurnOnStirrer" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="WarmerLighButton" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="ExtendActV2" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="RetractActV2" sIndex="" dtAddress="Bit" />
+    </coilCopy>
+    <coilTimer rung="0" row="104" column="10" cellsHeigh="3" iSortedIndex="71" myType="Timer" myTimerCommand="Start">
+      <eKeyTimer sAddress="ActuatorTimer" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <coilReset rung="0" row="100" column="27" cellsHeigh="-1" iSortedIndex="84">
+      <eAddress1 sAddress="CycleReset" sIndex="" dtAddress="Bit" />
+    </coilReset>
+    <coilCopy rung="0" row="95" column="25" cellsHeigh="5" iSortedIndex="80" CopyType="standard">
+      <eKeySource sAddress="1" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="1" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="1" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="CycleReset" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="TurnOnStirrer" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="RetractActV2" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="ExtendActV2" sIndex="" dtAddress="Bit" />
+    </coilCopy>
+    <coilCopy rung="0" row="91" column="21" cellsHeigh="3" iSortedIndex="89" CopyType="standard">
+      <eKeySource sAddress="CookTime8oz" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="CookTime" sIndex="" dtAddress="UI16" />
+    </coilCopy>
+    <coilCopy rung="0" row="88" column="21" cellsHeigh="3" iSortedIndex="75" CopyType="standard">
+      <eKeySource sAddress="CookTime16oz" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="CookTime" sIndex="" dtAddress="UI16" />
+    </coilCopy>
+    <coilCopy rung="0" row="85" column="21" cellsHeigh="3" iSortedIndex="68" CopyType="standard">
+      <eKeySource sAddress="CustomCookTime" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="CookTime" sIndex="" dtAddress="UI16" />
+    </coilCopy>
+    <Equal rung="0" row="88" column="16" cellsHeigh="-1" iSortedIndex="74">
+      <eAddress1 sAddress="SelectPopcornAmt" sIndex="" dtAddress="UI16" />
+      <eAddress2 sAddress="1" sIndex="" dtAddress="UI8" />
+    </Equal>
+    <Equal rung="0" row="85" column="16" cellsHeigh="-1" iSortedIndex="67">
+      <eAddress1 sAddress="SelectPopcornAmt" sIndex="" dtAddress="UI16" />
+      <eAddress2 sAddress="2" sIndex="" dtAddress="UI8" />
+    </Equal>
+    <coilTimer rung="0" row="85" column="13" cellsHeigh="3" iSortedIndex="66" myType="Timer" myTimerCommand="Start">
+      <eKeyTimer sAddress="PopcornPopTimer" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <NO rung="0" row="85" column="9" cellsHeigh="-1" iSortedIndex="58">
+      <eAddress1 sAddress="CancelPoppingBtn" sIndex="" dtAddress="Bit" />
+    </NO>
+    <NO rung="0" row="85" column="6" cellsHeigh="-1" iSortedIndex="57">
+      <eAddress1 sAddress="PopPopcornButton" sIndex="" dtAddress="Bit" />
+    </NO>
+    <coilCopy rung="0" row="75" column="5" cellsHeigh="5" iSortedIndex="51" CopyType="standard">
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="ActButtonPressed" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="ActLogicPwrtPrsd" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="KetButtonPressed" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="StrButtonPressed" sIndex="" dtAddress="Bit" />
+    </coilCopy>
+    <coilCopy rung="0" row="80" column="24" cellsHeigh="3" iSortedIndex="56" CopyType="standard">
+      <eKeySource sAddress="0" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="CycleCount" sIndex="" dtAddress="UI16" />
+    </coilCopy>
+    <NO rung="0" row="80" column="20" cellsHeigh="-1" iSortedIndex="55">
+      <eAddress1 sAddress="ConfirmCleanBtn" sIndex="" dtAddress="Bit" />
+    </NO>
+    <coilSet rung="0" row="76" column="20" cellsHeigh="-1" iSortedIndex="54">
+      <eAddress1 sAddress="CleaningNeeded" sIndex="" dtAddress="Bit" />
+    </coilSet>
+    <coilReset rung="0" row="80" column="16" cellsHeigh="-1" iSortedIndex="65">
+      <eAddress1 sAddress="CleaningNeeded" sIndex="" dtAddress="Bit" />
+    </coilReset>
+    <GreaterEqual rung="0" row="76" column="16" cellsHeigh="-1" iSortedIndex="53">
+      <eAddress1 sAddress="CycleCount" sIndex="" dtAddress="UI16" />
+      <eAddress2 sAddress="3" sIndex="" dtAddress="UI8" />
+    </GreaterEqual>
+    <coilCounter rung="0" row="76" column="11" cellsHeigh="-1" iSortedIndex="52" direction="Up">
+      <eCounter sAddress="CycleCount" sIndex="" dtAddress="UI16" />
+      <eBitCausesCount sAddress="PopPopcornButton" sIndex="" dtAddress="Bit" />
+      <bRisingEdgeTrigger value="False" />
+    </coilCounter>
+    <coilSet rung="0" row="100" column="24" cellsHeigh="-1" iSortedIndex="83">
+      <eAddress1 sAddress="GoToHomeScreen" sIndex="" dtAddress="Bit" />
+    </coilSet>
+    <coilTimer rung="0" row="102" column="20" cellsHeigh="3" iSortedIndex="82" myType="Timer" myTimerCommand="Reset">
+      <eKeyTimer sAddress="ActuatorTimer" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <NC rung="0" row="101" column="13" cellsHeigh="-1" iSortedIndex="70">
+      <eAddress1 sAddress="CycleReset" sIndex="" dtAddress="Bit" />
+    </NC>
+    <coilReset rung="0" row="101" column="16" cellsHeigh="-1" iSortedIndex="81">
+      <eAddress1 sAddress="WarmerLighButton" sIndex="" dtAddress="Bit" />
+    </coilReset>
+    <coilReset rung="0" row="98" column="21" cellsHeigh="-1" iSortedIndex="-1">
+      <eAddress1 sAddress="TurnOnKettle" sIndex="" dtAddress="Bit" />
+    </coilReset>
+    <Less rung="0" row="96" column="17" cellsHeigh="-1" iSortedIndex="78">
+      <eAddress1 sAddress="CalculatedTemp" sIndex="" dtAddress="I16" />
+      <eAddress2 sAddress="200" sIndex="" dtAddress="UI8" />
+    </Less>
+    <coilSet rung="0" row="95" column="21" cellsHeigh="-1" iSortedIndex="79">
+      <eAddress1 sAddress="TurnOnKettle" sIndex="" dtAddress="Bit" />
+    </coilSet>
+    <coilCalc rung="0" row="17" column="2" cellsHeigh="3" iSortedIndex="2">
+      <eStoreIn sAddress="CalculatedTemp" sIndex="" dtAddress="I16" />
+      <Equation>
+        <mathElement sAddress="TempInputVoltage" sIndex="" dtAddress="I16" />
+        <mathElement sAddress="*" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress=".5526" sIndex="" dtAddress="Float" />
+        <mathElement sAddress="-" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="109.3389" sIndex="" dtAddress="Float" />
+      </Equation>
+    </coilCalc>
+    <coilFilter rung="0" row="17" column="10" cellsHeigh="3" iSortedIndex="3" filterMode="start" iWeight="4" timeUnit="sec">
+      <eKeyInput sAddress="CalculatedTemp" sIndex="" dtAddress="I16" />
+      <eKeyOutput sAddress="FilteredTemp" sIndex="" dtAddress="I16" />
+      <eKeyTimeBetweenSamples sAddress="1" sIndex="" dtAddress="UI8" />
+    </coilFilter>
+    <coilCopy rung="0" row="14" column="22" cellsHeigh="9" iSortedIndex="32" CopyType="standard">
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="KetButtonPressed" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="TurnOnKettle" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="TurnOnStirrer" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="TurnOnWarmerLght" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="ExtendActV2" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="RetractActV2" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="WarmerLighButton" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="ManualMode" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="PopPopcornButton" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="StrButtonPressed" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="ActButtonPressed" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="CancelPoppingBtn" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="ResetActFaultBtn" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="ActuatorLogicPwr" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="IgnoreFaultBtn" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="CycleCount" sIndex="" dtAddress="UI16" />
+    </coilCopy>
+    <wireRouter rung="0" row="124" column="46" cellsHeigh="-1" iSortedIndex="-1" />
+    <coilTimer rung="0" row="66" column="9" cellsHeigh="3" iSortedIndex="21" myType="Timer" myTimerCommand="Start">
+      <eKeyTimer sAddress="ManualModeTimer" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <coilCalc rung="0" row="66" column="12" cellsHeigh="3" iSortedIndex="22">
+      <eStoreIn sAddress="OnScreenTimer2" sIndex="" dtAddress="UI16" />
+      <Equation>
+        <mathElement sAddress="ManModeTimeout" sIndex="" dtAddress="I32" />
+        <mathElement sAddress="-" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="ManualModeTimer" sIndex="" dtAddress="I32" />
+        <mathElement sAddress="/" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="1000" sIndex="" dtAddress="I16" />
+      </Equation>
+    </coilCalc>
+    <NO rung="0" row="67" column="43" cellsHeigh="-1" iSortedIndex="28">
+      <eAddress1 sAddress="ActLogicPwrtPrsd" sIndex="" dtAddress="Bit" />
+    </NO>
+    <coilCopy rung="0" row="69" column="37" cellsHeigh="5" iSortedIndex="-1" CopyType="standard">
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="StrButtonPressed" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="WarmerLighButton" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="TurnOnKettle" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="TurnOnStirrer" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="PopPopcornButton" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="TurnOnWarmerLght" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="KetButtonPressed" sIndex="" dtAddress="Bit" />
+    </coilCopy>
+    <TimerCompare rung="0" row="66" column="19" cellsHeigh="-1" iSortedIndex="23" timerCompareType="Less" timeUnit="sec">
+      <eKeyTimerValue sAddress="ManualModeTimer" sIndex="" dtAddress="I32" />
+      <eKeyDuration sAddress="ManModeTimeout" sIndex="" dtAddress="I32" />
+    </TimerCompare>
+    <coilReset rung="0" row="70" column="19" cellsHeigh="-1" iSortedIndex="62">
+      <eAddress1 sAddress="ManualMode" sIndex="" dtAddress="Bit" />
+    </coilReset>
+    <coilCopy rung="0" row="68" column="27" cellsHeigh="3" iSortedIndex="25" CopyType="standard">
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="1" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="RetractActV2" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="ExtendActV2" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="EarlyDumpButton" sIndex="" dtAddress="Bit" />
+    </coilCopy>
+    <coilCopy rung="0" row="64" column="27" cellsHeigh="3" iSortedIndex="64" CopyType="standard">
+      <eKeySource sAddress="1" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="RetractActV2" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="ExtendActV2" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="EarlyDumpButton" sIndex="" dtAddress="Bit" />
+    </coilCopy>
+    <Less rung="0" row="64" column="33" cellsHeigh="-1" iSortedIndex="26">
+      <eAddress1 sAddress="FilteredTemp" sIndex="" dtAddress="I16" />
+      <eAddress2 sAddress="200" sIndex="" dtAddress="UI8" />
+    </Less>
+    <coilCopy rung="0" row="63" column="37" cellsHeigh="5" iSortedIndex="27" CopyType="standard">
+      <eKeySource sAddress="KetButtonPressed" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="StrButtonPressed" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="WarmerLighButton" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="TurnOnKettle" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="TurnOnStirrer" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="PopPopcornButton" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="TurnOnWarmerLght" sIndex="" dtAddress="Bit" />
+    </coilCopy>
+    <coilTimer rung="0" row="72" column="6" cellsHeigh="3" iSortedIndex="50" myType="Timer" myTimerCommand="Reset">
+      <eKeyTimer sAddress="ManualModeTimer" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <coilCopy rung="0" row="69" column="5" cellsHeigh="3" iSortedIndex="49" CopyType="standard">
+      <eKeySource sAddress="0" sIndex="" dtAddress="UI16" />
+      <eKeyDestination sAddress="OnScreenTimer2" sIndex="" dtAddress="UI16" />
+    </coilCopy>
+    <NO rung="0" row="66" column="24" cellsHeigh="-1" iSortedIndex="24">
+      <eAddress1 sAddress="ActButtonPressed" sIndex="" dtAddress="Bit" />
+    </NO>
+    <coilSet rung="0" row="70" column="22" cellsHeigh="-1" iSortedIndex="63">
+      <eAddress1 sAddress="GoToHomeScreen" sIndex="" dtAddress="Bit" />
+    </coilSet>
+    <coilReset rung="0" row="71" column="43" cellsHeigh="-1" iSortedIndex="29">
+      <eAddress1 sAddress="ManualMode" sIndex="" dtAddress="Bit" />
+    </coilReset>
+    <coilTimer rung="0" row="80" column="43" cellsHeigh="3" iSortedIndex="31" myType="Timer" myTimerCommand="Reset">
+      <eKeyTimer sAddress="RunTime" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <coilCopy rung="0" row="75" column="41" cellsHeigh="3" iSortedIndex="30" CopyType="standard">
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="ExtendActV2" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="RetractActV2" sIndex="" dtAddress="Bit" />
+    </coilCopy>
+    <coilTimer rung="0" row="28" column="21" cellsHeigh="3" iSortedIndex="46" myType="Timer" myTimerCommand="Reset">
+      <eKeyTimer sAddress="RunTime" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <coilReset rung="0" row="28" column="26" cellsHeigh="-1" iSortedIndex="47">
+      <eAddress1 sAddress="ActuatorFault" sIndex="" dtAddress="Bit" />
+    </coilReset>
+    <coilCopy rung="0" row="33" column="25" cellsHeigh="3" iSortedIndex="48" CopyType="standard">
+      <eKeySource sAddress="1" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="HomingStatus" sIndex="" dtAddress="Bit" />
+    </coilCopy>
+    <TimerCompare rung="0" row="52" column="13" cellsHeigh="-1" iSortedIndex="11" timerCompareType="GreaterOrEqual" timeUnit="sec">
+      <eKeyTimerValue sAddress="RunTime" sIndex="" dtAddress="I32" />
+      <eKeyDuration sAddress="1" sIndex="" dtAddress="UI8" />
+    </TimerCompare>
+    <coilReset rung="0" row="55" column="15" cellsHeigh="-1" iSortedIndex="38">
+      <eAddress1 sAddress="HomingStatus" sIndex="" dtAddress="Bit" />
+    </coilReset>
+    <NO rung="0" row="17" column="18" cellsHeigh="-1" iSortedIndex="4">
+      <eAddress1 sAddress="EStopNotPressed" sIndex="" dtAddress="Bit" />
+    </NO>
+    <coilCalc rung="0" row="96" column="6" cellsHeigh="3" iSortedIndex="76">
+      <eStoreIn sAddress="OnScreenTimer" sIndex="" dtAddress="UI16" />
+      <Equation>
+        <mathElement sAddress="CookTime" sIndex="" dtAddress="UI16" />
+        <mathElement sAddress="-" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="PopcornPopTimer" sIndex="" dtAddress="I32" />
+        <mathElement sAddress="/" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="1000" sIndex="" dtAddress="I16" />
+      </Equation>
+    </coilCalc>
+    <TimerCompare rung="0" row="96" column="13" cellsHeigh="-1" iSortedIndex="77" timerCompareType="Less" timeUnit="sec">
+      <eKeyTimerValue sAddress="PopcornPopTimer" sIndex="" dtAddress="I32" />
+      <eKeyDuration sAddress="CookTime" sIndex="" dtAddress="UI16" />
+    </TimerCompare>
+    <coilTimer rung="0" row="17" column="38" cellsHeigh="3" iSortedIndex="34" myType="Timer" myTimerCommand="Reset">
+      <eKeyTimer sAddress="RunTime" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <coilCopy rung="0" row="17" column="28" cellsHeigh="3" iSortedIndex="33" CopyType="standard">
+      <eKeySource sAddress="0" sIndex="" dtAddress="Bit" />
+      <eKeyDestination sAddress="EarlyDumpButton" sIndex="" dtAddress="Bit" />
+    </coilCopy>
+    <wireRouter rung="0" row="44" column="34" cellsHeigh="-1" iSortedIndex="-1" />
+    <coilSet rung="0" row="36" column="31" cellsHeigh="-1" iSortedIndex="9">
+      <eAddress1 sAddress="TurnOnWarmerLght" sIndex="" dtAddress="Bit" />
+    </coilSet>
+    <coilReset rung="0" row="42" column="31" cellsHeigh="-1" iSortedIndex="36">
+      <eAddress1 sAddress="TurnOnWarmerLght" sIndex="" dtAddress="Bit" />
+    </coilReset>
+    <TimerCompare rung="0" row="36" column="27" cellsHeigh="-1" iSortedIndex="8" timerCompareType="Less" timeUnit="hr">
+      <eKeyTimerValue sAddress="WarmerLightTimer" sIndex="" dtAddress="I32" />
+      <eKeyDuration sAddress="WarmLightTimout" sIndex="" dtAddress="UI16" />
+    </TimerCompare>
+    <coilReset rung="0" row="40" column="27" cellsHeigh="-1" iSortedIndex="37">
+      <eAddress1 sAddress="WarmerLighButton" sIndex="" dtAddress="Bit" />
+    </coilReset>
+    <coilTimer rung="0" row="36" column="9" cellsHeigh="3" iSortedIndex="6" myType="Timer" myTimerCommand="Start">
+      <eKeyTimer sAddress="WarmerLightTimer" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <coilTimer rung="0" row="42" column="23" cellsHeigh="3" iSortedIndex="35" myType="Timer" myTimerCommand="Reset">
+      <eKeyTimer sAddress="WarmerLightTimer" sIndex="" dtAddress="I32" />
+    </coilTimer>
+    <wireRouter rung="0" row="64" column="7" cellsHeigh="-1" iSortedIndex="-1" />
+    <coilCalc rung="0" row="36" column="16" cellsHeigh="3" iSortedIndex="7">
+      <eStoreIn sAddress="OnScreenTimer3" sIndex="" dtAddress="UI16" />
+      <Equation>
+        <mathElement sAddress="WarmLightTimout" sIndex="" dtAddress="UI16" />
+        <mathElement sAddress="*" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="60" sIndex="" dtAddress="UI8" />
+        <mathElement sAddress="-" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="WarmerLightTimer" sIndex="" dtAddress="I32" />
+        <mathElement sAddress="/" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="(" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="1000" sIndex="" dtAddress="I16" />
+        <mathElement sAddress="*" sIndex="" dtAddress="Symbol" />
+        <mathElement sAddress="60" sIndex="" dtAddress="UI8" />
+        <mathElement sAddress=")" sIndex="" dtAddress="Symbol" />
+      </Equation>
+    </coilCalc>
+    <NO rung="0" row="91" column="30" cellsHeigh="-1" iSortedIndex="69">
+      <eAddress1 sAddress="EarlyDumpButton" sIndex="" dtAddress="Bit" />
+    </NO>
+    <wireRouter rung="0" row="92" column="27" cellsHeigh="-1" iSortedIndex="-1" />
+  </Cells>
+  <FlowConnections>
+    <FlowConn From="0" Yes="67" dirYesFrom="down" dirYesTo="left" />
+    <FlowConn From="1" Yes="2" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="2" Yes="0" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="6" Yes="71" dirYesFrom="right" dirYesTo="left" No="82" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="7" Yes="9" dirYesFrom="right" dirYesTo="left" No="105" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="9" Yes="10" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="10" Yes="105" dirYesFrom="down" dirYesTo="right" />
+    <FlowConn From="11" Yes="103" dirYesFrom="right" dirYesTo="left" No="104" dirNoFrom="down" dirNoTo="left" />
+    <FlowConn From="13" Yes="6" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="14" Yes="88" dirYesFrom="down" dirYesTo="up" No="70" dirNoFrom="right" dirNoTo="up" />
+    <FlowConn From="15" Yes="14" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="16" Yes="15" dirYesFrom="right" dirYesTo="left" No="13" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="17" Yes="16" dirYesFrom="right" dirYesTo="left" No="13" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="19" Yes="70" dirYesFrom="right" dirYesTo="up" />
+    <FlowConn From="20" Yes="70" dirYesFrom="right" dirYesTo="up" />
+    <FlowConn From="21" Yes="7" dirYesFrom="down" dirYesTo="up" No="20" dirNoFrom="right" dirNoTo="left" />
+    <FlowConn From="22" Yes="21" dirYesFrom="down" dirYesTo="up" No="19" dirNoFrom="right" dirNoTo="left" />
+    <FlowConn From="23" Yes="22" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="24" Yes="22" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="25" Yes="91" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="26" Yes="13" dirYesFrom="down" dirYesTo="up" No="17" dirNoFrom="right" dirNoTo="left" />
+    <FlowConn From="28" Yes="70" dirYesFrom="right" dirYesTo="up" />
+    <FlowConn From="29" Yes="70" dirYesFrom="right" dirYesTo="up" />
+    <FlowConn From="30" Yes="28" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="31" Yes="30" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="32" Yes="29" dirYesFrom="right" dirYesTo="left" No="31" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="33" Yes="70" dirYesFrom="right" dirYesTo="up" />
+    <FlowConn From="34" Yes="35" dirYesFrom="right" dirYesTo="left" No="33" dirNoFrom="down" dirNoTo="left" />
+    <FlowConn From="35" Yes="70" dirYesFrom="right" dirYesTo="up" />
+    <FlowConn From="36" Yes="70" dirYesFrom="right" dirYesTo="up" />
+    <FlowConn From="37" Yes="36" dirYesFrom="right" dirYesTo="left" No="34" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="38" Yes="39" dirYesFrom="right" dirYesTo="left" No="32" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="39" Yes="37" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="40" Yes="41" dirYesFrom="right" dirYesTo="left" No="38" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="41" Yes="70" dirYesFrom="right" dirYesTo="up" />
+    <FlowConn From="42" Yes="40" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="43" Yes="70" dirYesFrom="right" dirYesTo="up" />
+    <FlowConn From="44" Yes="70" dirYesFrom="right" dirYesTo="up" />
+    <FlowConn From="45" Yes="108" dirYesFrom="right" dirYesTo="up" />
+    <FlowConn From="46" Yes="108" dirYesFrom="right" dirYesTo="up" />
+    <FlowConn From="47" Yes="108" dirYesFrom="right" dirYesTo="up" />
+    <FlowConn From="48" Yes="46" dirYesFrom="right" dirYesTo="left" No="45" dirNoFrom="down" dirNoTo="left" />
+    <FlowConn From="49" Yes="47" dirYesFrom="right" dirYesTo="left" No="48" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="50" Yes="49" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="51" Yes="31" dirYesFrom="down" dirYesTo="up" No="50" dirNoFrom="right" dirNoTo="left" />
+    <FlowConn From="52" Yes="51" dirYesFrom="right" dirYesTo="left" No="31" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="53" Yes="59" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="54" Yes="52" dirYesFrom="right" dirYesTo="up" />
+    <FlowConn From="55" Yes="54" dirYesFrom="right" dirYesTo="left" No="52" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="56" Yes="55" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="57" Yes="55" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="58" Yes="56" dirYesFrom="right" dirYesTo="left" No="57" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="59" Yes="58" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="60" Yes="43" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="61" Yes="60" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="62" Yes="42" dirYesFrom="left" dirYesTo="left" No="63" dirNoFrom="right" dirNoTo="left" />
+    <FlowConn From="63" Yes="61" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="64" Yes="44" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="65" Yes="66" dirYesFrom="right" dirYesTo="left" No="66" dirNoFrom="down" dirNoTo="left" />
+    <FlowConn From="66" Yes="44" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="67" Yes="68" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="68" Yes="93" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="69" Yes="97" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="70" Yes="67" dirYesFrom="left" dirYesTo="left" />
+    <FlowConn From="71" Yes="72" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="72" Yes="75" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="73" Yes="85" dirYesFrom="down" dirYesTo="up" No="70" dirNoFrom="right" dirNoTo="up" />
+    <FlowConn From="74" Yes="73" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="75" Yes="83" dirYesFrom="right" dirYesTo="left" No="76" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="76" Yes="84" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="77" Yes="79" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="78" Yes="79" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="79" Yes="80" dirYesFrom="right" dirYesTo="left" No="80" dirNoFrom="down" dirNoTo="left" />
+    <FlowConn From="80" Yes="73" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="81" Yes="53" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="82" Yes="81" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="83" Yes="77" dirYesFrom="down" dirYesTo="left" No="78" dirNoFrom="right" dirNoTo="left" />
+    <FlowConn From="84" Yes="83" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="85" Yes="87" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="86" Yes="70" dirYesFrom="right" dirYesTo="up" />
+    <FlowConn From="87" Yes="86" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="88" Yes="89" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="89" Yes="90" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="90" Yes="13" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="91" Yes="24" dirYesFrom="right" dirYesTo="left" No="92" dirNoFrom="down" dirNoTo="left" />
+    <FlowConn From="92" Yes="23" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="93" Yes="11" dirYesFrom="down" dirYesTo="up" No="69" dirNoFrom="right" dirNoTo="left" />
+    <FlowConn From="94" Yes="95" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="95" Yes="65" dirYesFrom="right" dirYesTo="left" No="62" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="96" Yes="67" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="97" Yes="96" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="98" Yes="25" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="99" Yes="98" dirYesFrom="right" dirYesTo="up" />
+    <FlowConn From="100" Yes="98" dirYesFrom="right" dirYesTo="up" />
+    <FlowConn From="101" Yes="99" dirYesFrom="right" dirYesTo="left" No="102" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="102" Yes="100" dirYesFrom="down" dirYesTo="left" />
+    <FlowConn From="103" Yes="106" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="104" Yes="100" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="105" Yes="26" dirYesFrom="down" dirYesTo="up" />
+    <FlowConn From="106" Yes="101" dirYesFrom="right" dirYesTo="left" />
+    <FlowConn From="107" Yes="62" dirYesFrom="right" dirYesTo="up" No="94" dirNoFrom="down" dirNoTo="up" />
+    <FlowConn From="108" Yes="107" dirYesFrom="right" dirYesTo="left" />
+  </FlowConnections>
+  <Wires />
+  <Comments />
+</VelocioNetworks>
